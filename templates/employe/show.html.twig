@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Detail employé{% endblock %}
+
+{% block body %}
+    <h1>Detail employé</h1>
+
+    <h2>{{ employes }}</h2>
+    <p>
+        Entreprise : <a href="{{ path('show_entreprise' , {'id' : employes.entreprise.id}) }}">{{employes.entreprise}}</a> <br>
+        ville : {% if employes.ville %} {{employes.ville}} {% else %} ville non renseignée
+            
+        {% endif %}<br>
+        
+        Date de naissance :{{employes.dateNaissance | date("d-m-y") }} <br>
+        Age : {{ employes.age }} <br>
+        Date d'embauche :{{employes.dateEmbauche | date("d-m-y") }}
+    </p>
+    
+{% endblock %}

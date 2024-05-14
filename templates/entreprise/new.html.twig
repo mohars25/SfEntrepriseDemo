@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ajouter une entreprise{% endblock %}
+
+{% block body %}
+    <h1>ajouter une entreprise</h1>
+²   {{form(formAddEntreprise)}}
+{# 
+    {% for entreprise in entreprises %}
+        <a href="{{ path('show_entreprise' , {'id' : entreprise.id}) }}">{{ entreprise}}</a> <br>
+    {% endfor %} #}
+{% endblock %}
