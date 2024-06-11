@@ -7,6 +7,7 @@
             "version": "2.12",
             "ref": "7b1b0b637b337f6beb895589948cd119da705524"
         },
+
         "files": [
             "./config/packages/doctrine.yaml",
             "./src/Entity/.gitignore",
